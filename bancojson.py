@@ -52,6 +52,8 @@ class BancodeMaterias:
             print("✅ Nota AV adicionada!")
         else:
             print("⚠️ Matéria não encontrada.")
+            print("Tente uma das seguintes opções:")
+            self.listar()
 
     def adicionar_nota_simulado(self, nome, nota):
         materia = self.buscar_materia(nome)
@@ -61,6 +63,8 @@ class BancodeMaterias:
             print("✅ Nota de simulado adicionada!")
         else:
             print("⚠️ Matéria não encontrada.")
+            print("Tente uma das seguintes opções:")
+            self.listar()
 
     def listar(self):
         if not self.materias:
